@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Videos } from "../Data/Video";
 import { Details, Profile, SideTab } from "../Components";
 import { useSelector } from "react-redux";
 

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FiSettings } from "react-icons/fi";
-import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
-import { BiWorld } from "react-icons/bi";
-import { HiMail } from "react-icons/hi";
+import { BsInstagram, BsGithub } from "react-icons/bs";
 import {
   AiOutlineClose,
   AiFillLinkedin,
@@ -11,7 +9,7 @@ import {
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import ProfilePic from "../Assets/Profile.png";
 import Modal from "react-modal";
-import { Color, VideoName, Videos } from "../Data/Video";
+import { Color, Videos } from "../Data/Video";
 import { useDispatch, useSelector } from "react-redux";
 import { ColorNames, VideoLink } from "../Redux/Reducer";
 import { motion } from "framer-motion";
@@ -20,14 +18,14 @@ const Profile = () => {
   const dispatch = useDispatch();
   const { ColorNameFirst } = useSelector((state) => state.Color);
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [colorName, setColorName] = useState("#28e98c");
+  // const [colorName, setColorName] = useState("#28e98c");
 
   const handleClick = (id) => {
     console.log(id);
     const NewData = Color.filter((item) => item.id === id);
     const NewDataColor = NewData.map((item) => item.color);
     console.log(NewDataColor);
-    setColorName(NewDataColor);
+    // setColorName(NewDataColor);
     dispatch(ColorNames(NewDataColor));
     setIsOpen(false);
   };
@@ -35,7 +33,7 @@ const Profile = () => {
     // window.location.reload()
     console.log(id);
     const NewData = Videos.filter((item) => item.id === id);
-    const NewDataColor = NewData.map((item) => item.video);
+    // const NewDataColor = NewData.map((item) => item.video);
     dispatch(VideoLink(NewData));
     console.log("mapVideo-->", NewData);
     setIsOpen(false);
@@ -162,7 +160,7 @@ const Profile = () => {
               <div className="group">
                 <a
                   href="https://github.com/MUSHTHAK2899"
-                  target="_blank"
+                  // target="_blank"
                   className="border duration-500  border-gray-500 w-10 h-10 flex justify-center items-center rounded-full  group-hover:border-[#28e98c] cursor-pointer"
                 >
                   <BsGithub
@@ -174,7 +172,7 @@ const Profile = () => {
               <div className="group">
                 <a
                   href="https://www.linkedin.com/in/mushthak-mohd-00589b226"
-                  target="_blank"
+                  // target="_blank"
                   className="border duration-500  border-gray-500 w-10 h-10 flex justify-center items-center rounded-full  group-hover:border-[#28e98c] cursor-pointer"
                 >
                   <AiFillLinkedin
@@ -186,7 +184,7 @@ const Profile = () => {
               <div className="group">
                 <a
                   href="https://wa.me/+918086966621"
-                  target="_blank"
+                  // target="_blank"
                   className="border duration-500  border-gray-500 w-10 h-10 flex justify-center items-center rounded-full  group-hover:border-[#28e98c] cursor-pointer"
                 >
                   <AiOutlineWhatsApp
@@ -198,7 +196,7 @@ const Profile = () => {
               <div className="group">
                 <a
                   href="https://www.instagram.com/mushthak._/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
-                  target="_blank"
+                  // target="_blank"
                   className="border duration-500  border-gray-500 w-10 h-10 flex justify-center items-center rounded-full group   group-hover:border-[#28e98c] cursor-pointer"
                 >
                   <BsInstagram

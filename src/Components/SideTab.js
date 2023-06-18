@@ -6,7 +6,6 @@ import { AiOutlineCode } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { GiNotebook } from "react-icons/gi";
 import { AiFillMail } from "react-icons/ai"
-import { useNavigate } from "react-router-dom";
 
 const SideTab = () => {
   return (
