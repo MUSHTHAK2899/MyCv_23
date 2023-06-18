@@ -45,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.1",
-    "custom-cursor-react": "^1.0.5"
+    "tailwindcss": "^3.3.1"
   }
 }
