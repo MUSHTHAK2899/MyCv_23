@@ -18,7 +18,7 @@ const Home = () => {
     const SelectedDatas=JSON.parse(data)
     // console.log("SelectedData---->",SelectedDatas)
     setSelectedData(SelectedDatas==null?Video:SelectedDatas)
-  },[])
+  },[Video])
 
   return (
     <>
