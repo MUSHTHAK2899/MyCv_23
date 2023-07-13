@@ -13,8 +13,11 @@ const Home = () => {
     setSelectedData(SelectedDatas==null?Video:SelectedDatas)
   }
 
-  useEffect(()=>{
-    localStorageData()
+  useEffect( async ()=>{
+    let data =await localStorage.getItem('selectedVideo')
+    const SelectedDatas=JSON.parse(data)
+    console.log("SelectedData---->",SelectedDatas)
+    setSelectedData(SelectedDatas==null?Video:SelectedDatas)
   },[])
 
   return (
