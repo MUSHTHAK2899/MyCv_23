@@ -5,18 +5,18 @@ import { useSelector } from "react-redux";
 const Home = () => {
   const {Video} = useSelector(state => state.Color);
   const [SelectedData,setSelectedData]=useState([])
-  console.log("vide0",Video)
-  const localStorageData = async()=>{
-    let data =await localStorage.getItem('selectedVideo')
-    const SelectedDatas=JSON.parse(data)
-    console.log("SelectedData---->",SelectedDatas)
-    setSelectedData(SelectedDatas==null?Video:SelectedDatas)
-  }
+  // console.log("vide0",Video)
+  // const localStorageData = async()=>{
+  //   let data =await localStorage.getItem('selectedVideo')
+  //   const SelectedDatas=JSON.parse(data)
+  //   console.log("SelectedData---->",SelectedDatas)
+  //   setSelectedData(SelectedDatas==null?Video:SelectedDatas)
+  // }
 
-  useEffect( async ()=>{
-    let data =await localStorage.getItem('selectedVideo')
+  useEffect(()=>{
+    let data = localStorage.getItem('selectedVideo')
     const SelectedDatas=JSON.parse(data)
-    console.log("SelectedData---->",SelectedDatas)
+    // console.log("SelectedData---->",SelectedDatas)
     setSelectedData(SelectedDatas==null?Video:SelectedDatas)
   },[])
 
