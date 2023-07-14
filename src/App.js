@@ -1,7 +1,7 @@
 import React from "react";
 import Routers from "./Router";
-import CustomCursor from "custom-cursor-react";
-import "custom-cursor-react/dist/index.css";
+// import CustomCursor from "custom-cursor-react";
+// import "custom-cursor-react/dist/index.css";
 import { useSelector } from "react-redux";
 import { motion, useScroll } from "framer-motion";
 
@@ -14,7 +14,7 @@ const App = () => {
         className={"progress-bar"}
         style={{ scaleX: scrollYProgress ,background:ColorNameFirst}}
       />
-      <CustomCursor
+      {/* <CustomCursor
         targets={[".link", ".your-css-selector"]}
         customClass="custom-cursor"
         dimensions={50}
@@ -25,7 +25,7 @@ const App = () => {
           opacity: 0.2,
         }}
         targetOpacity={0.5}
-      ></CustomCursor>
+      ></CustomCursor> */}
       <Routers />
     </>
   );
