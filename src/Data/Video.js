@@ -55,14 +55,14 @@ const Specializations = [
     icon: <GoRadioTower size={28} />,
     subtitle:
       "I created digital products with unique ideas use react js & Tailwind css",
-    Projects: "24 PROJECTS",
+    Projects: "3 PROJECTS",
   },
   {
     id: 2,
     title: "Mobile App Development",
     icon: <BiCodeAlt size={33} />,
-    subtitle: "I created digital products with unique ideas use Figma & Framer",
-    Projects: "24 PROJECTS",
+    subtitle: "I created digital products with unique ideas use React Native",
+    Projects: "3 PROJECTS",
   },
 ];
 
