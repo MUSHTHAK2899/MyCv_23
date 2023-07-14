@@ -1,7 +1,7 @@
 import React from "react";
 import Routers from "./Router";
-// import CustomCursor from "custom-cursor-react";
-// import "custom-cursor-react/dist/index.css";
+import CustomCursor from "custom-cursor-react";
+import "custom-cursor-react/dist/index.css";
 import { useSelector } from "react-redux";
 import { motion, useScroll } from "framer-motion";
 
